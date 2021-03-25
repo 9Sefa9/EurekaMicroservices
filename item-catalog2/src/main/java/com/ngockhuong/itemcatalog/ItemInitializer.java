@@ -15,7 +15,7 @@ public class ItemInitializer implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        Stream.of("Lining", "PUMA", "Bad Boy", "Air Jordan", "Nike", "Adidas", "Reebok")
+        Stream.of("IamSecondItemClass", "PUMA", "Bad Boy", "Air Jordan", "Nike", "Adidas", "Reebok")
                 .forEach(item -> itemRepository.save(new Item(item)));
 
         itemRepository.findAll().forEach(System.out::print);
