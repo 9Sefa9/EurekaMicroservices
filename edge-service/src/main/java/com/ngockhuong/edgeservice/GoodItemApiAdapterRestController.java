@@ -20,7 +20,7 @@ public class GoodItemApiAdapterRestController {
         return new ArrayList<>();
     }
 
-    @HystrixCommand(fallbackMethod = "fallback")
+    @HystrixCommand(fallbackMethod = "fallbackMethodGreet")
     @GetMapping("/top-brands")
     public Collection<Item> goodItems() {
         return itemClient.readItems()
@@ -34,5 +34,9 @@ public class GoodItemApiAdapterRestController {
         return !item.getName().equals("Nike") &&
                 !item.getName().equals("Adidas") &&
                 !item.getName().equals("Reebok");
+    }
+
+    private void fallbackMethodGreet() {
+        System.out.println("fallback Method was called!");
     }
 }
