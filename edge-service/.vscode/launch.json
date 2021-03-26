@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-EdgeServiceApplication<edge-service>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.ngockhuong.edgeservice.EdgeServiceApplication",
+            "projectName": "edge-service",
+            "args": ""
+        }
+    ]
+}

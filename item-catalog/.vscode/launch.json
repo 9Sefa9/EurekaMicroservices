@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-ItemCatalogApplication<item-catalog>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.ngockhuong.itemcatalog.ItemCatalogApplication",
+            "projectName": "item-catalog",
+            "args": ""
+        }
+    ]
+}
